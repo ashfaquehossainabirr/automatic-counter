@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.counter-box {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-radius: 12px;
+    color: #fff;
+    background: #333;
+}
+
+.counter-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
