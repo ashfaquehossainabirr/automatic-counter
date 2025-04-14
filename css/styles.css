@@ -28,3 +28,57 @@ body {
     justify-content: center;
     height: 100%;
 }
+
+.btns {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.start-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background: green;
+}
+
+.start-btn:active {
+    background: hsl(120, 100%, 15%);
+}
+
+.reload-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    background: hsl(60, 100%, 30%);
+}
+
+.reload-btn:active {
+    background: hsl(60, 100%, 20%);
+}
+
+p.output-display {
+    position: absolute;
+    right: 4%;
+    top: 5%;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    /* color: #000;
+    background: #fff; */
+    opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    background: dodgerblue;
+}
+
+p.output-display .msg:not(:last-of-type) {
+    margin-bottom: 10px;
+}
